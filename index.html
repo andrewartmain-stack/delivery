@@ -183,7 +183,7 @@
             <span
               style="width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:20px solid #FFC528;display:inline-block;filter:drop-shadow(0 2px 6px rgba(255,197,40,.5))"></span>
             <span style="display:flex;flex-direction:column;line-height:.92"><span
-                style="font-family:Anton,sans-serif;font-size:1.18rem;letter-spacing:.5px;color:#F5F3EE">TANOV</span><span
+                style="font-family:Anton,sans-serif;font-size:1.18rem;letter-spacing:.5px;color:#F5F3EE">TITANIC</span><span
                 style="font-size:.62rem;letter-spacing:.34em;color:#FFC528;font-weight:600">DELIVERY</span></span>
           </a>
           <nav class="nav-links" style="display:flex;align-items:center;gap:30px;font-size:.94rem;font-weight:500">
@@ -201,6 +201,7 @@
               style="display:inline-flex;padding:4px;border-radius:11px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);gap:2px">
               <button onClick="{{ setRo }}" class="{{ roClass }}">RO</button>
               <button onClick="{{ setEn }}" class="{{ enClass }}">EN</button>
+              <button onClick="{{ setAr }}" class="{{ arClass }}">AR</button>
             </div>
             <a href="#contact"
               style="display:inline-flex;align-items:center;gap:8px;background:#FFC528;color:#0B0B0C;font-weight:700;font-size:.9rem;padding:11px 18px;border-radius:11px;text-decoration:none;box-shadow:0 8px 22px -8px rgba(255,197,40,.6)"
@@ -254,7 +255,7 @@
             </div>
             <div
               style="position:absolute;inset:0;border-radius:22px;overflow:hidden;border:1px solid rgba(255,197,40,.25);box-shadow:0 30px 60px -20px rgba(0,0,0,.7)">
-              <img src="./screenshots/f5de3ede-f5b9-4a35-baa4-e9b6916a4acf.png" alt="Tanov Delivery"
+              <img src="./screenshots/f5de3ede-f5b9-4a35-baa4-e9b6916a4acf.png" alt="Titanic Delivery"
                 style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
             </div>
             <div
@@ -509,7 +510,7 @@
                 <div
                   style="font-size:.78rem;color:#8A867C;text-transform:uppercase;letter-spacing:.1em;font-weight:600">{{
                   t.contact.companyLabel }}</div>
-                <div style="font-weight:700;font-size:1.06rem;margin-top:2px">Tanov Delivery</div>
+                <div style="font-weight:700;font-size:1.06rem;margin-top:2px">Titanic Delivery</div>
               </div>
             </div>
             <a href="tel:+40741091384"
@@ -566,7 +567,7 @@
             <div style="display:flex;align-items:center;gap:11px">
               <span
                 style="width:0;height:0;border-left:11px solid transparent;border-right:11px solid transparent;border-bottom:18px solid #FFC528;display:inline-block"></span>
-              <span style="font-family:Anton,sans-serif;font-size:1.1rem;letter-spacing:.5px">TANOV <span
+              <span style="font-family:Anton,sans-serif;font-size:1.1rem;letter-spacing:.5px">TITANIC <span
                   style="color:#FFC528">DELIVERY</span></span>
             </div>
             <p style="color:#8A867C;margin:14px 0 0;max-width:320px;line-height:1.5">{{ t.footer.tagline }}</p>
@@ -576,6 +577,7 @@
               style="display:inline-flex;padding:4px;border-radius:11px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);gap:2px">
               <button onClick="{{ setRo }}" class="{{ roClass }}">RO</button>
               <button onClick="{{ setEn }}" class="{{ enClass }}">EN</button>
+              <button onClick="{{ setAr }}" class="{{ arClass }}">AR</button>
             </div>
           </div>
         </div>
@@ -611,7 +613,7 @@ class Component extends DCLogic {
         slot: 'Pune aici afișul tău',
         chip1: 'Sute de livratori activați', chip2: 'Suport disponibil acum'
       },
-      stats: [ {n:'7', l:'orașe active'}, {n:'3', l:'platforme'}, {n:'$1k–$2k', l:'USD / lună'} ],
+      stats: [ {n:'7', l:'orașe active'}, {n:'3', l:'platforme'}, {n:'5k–7.5k', l:'lei / lună'} ],
       benefits: {
         kicker: 'Avantajele tale', title: 'Ce îți oferim',
         subtitle: 'Tot ce ai nevoie ca să câștigi bine, în ritmul tău.',
@@ -671,7 +673,7 @@ class Component extends DCLogic {
       },
       footer: {
         tagline: 'Livrăm oportunități în România și Moldova.',
-        rights: 'Tanov Delivery © 2026 · Toate drepturile rezervate.'
+        rights: 'Titanic Delivery © 2026 · Toate drepturile rezervate.'
       }
     },
     en: {
@@ -686,12 +688,12 @@ class Component extends DCLogic {
         slot: 'Drop your poster here',
         chip1: 'Hundreds of couriers activated', chip2: 'Support available now'
       },
-      stats: [ {n:'7', l:'active cities'}, {n:'3', l:'platforms'}, {n:'$1k–$2k', l:'USD / month'} ],
+      stats: [ {n:'7', l:'active cities'}, {n:'3', l:'platforms'}, {n:'5k–7.5k', l:'lei / month'} ],
       benefits: {
         kicker: 'Your advantages', title: 'What we offer',
         subtitle: 'Everything you need to earn well, at your own pace.',
         items: [
-          {t:'Monthly income $1,000–$2,000', d:'Depending on your activity.'},
+          {t:'Monthly income 5,000–7,500 lei', d:'Depending on your activity.'},
           {t:'Weekly bonuses', d:'For active couriers.'},
           {t:'100% flexible schedule', d:'Work whenever you want.'},
           {t:'Fast activation', d:'No hassle, no bureaucracy.'},
@@ -730,7 +732,7 @@ class Component extends DCLogic {
       faq: {
         kicker: 'Frequently asked', title: 'Frequently asked questions',
         items: [
-          {q:'How much can I earn?', a:'Earnings typically range between $1000 and $2000 per month, depending on hours worked, area and platform. Active couriers in busy zones earn the most, especially on weekends and at peak hours.'},
+          {q:'How much can I earn?', a:'Earnings typically range between 5,000 and 9,000 lei per month, depending on hours worked, area and platform. Active couriers in busy zones earn the most, especially on weekends and at peak hours.'},
           {q:'Can I work part-time?', a:'Yes. The schedule is 100% flexible — you can work part-time, full-time or just on weekends. You decide when and how much you work.'},
           {q:'Do I need a car?', a:"Not necessarily. You can deliver by bike, kick scooter, moped or car. If you don't have a vehicle, we'll help you find a solution."},
           {q:'How long does activation take?', a:'Activation is fast and bureaucracy-free. In most cases you can start delivering within just a few days of signing up.'},
@@ -746,7 +748,82 @@ class Component extends DCLogic {
       },
       footer: {
         tagline: 'We deliver opportunities in Romania and Moldova.',
-        rights: 'Tanov Delivery © 2026 · All rights reserved.'
+        rights: 'Titanic Delivery © 2026 · All rights reserved.'
+      }
+    },
+    ar: {
+      nav: { home:'الرئيسية', benefits:'المزايا', cities:'المدن', faq:'الأسئلة', contact:'اتصل' },
+      headerCta: 'أصبح سائقاً',
+      platformsLabel: 'نحن نوظف لـ',
+      hero: {
+        badge: 'تفعيل سريع · رومانيا ومولدافيا',
+        headline1: 'نحن نوظف', headline2: 'Bolt Food، Wolt وGlovo', headline3: 'سائقين في رومانيا ومولدافيا!',
+        subtitle: 'هل تبحث عن عمل مرن أو دخل إضافي؟ انضم لفريقنا وابدأ بالكسب بسرعة!',
+        primary: 'أريد أن أصبح سائقاً', secondary: 'راسلنا على واتساب',
+        slot: 'ضع ملصقك هنا',
+        chip1: 'المئات من السائقين مفعّلون', chip2: 'الدعم متاح الآن'
+      },
+      stats: [ {n:'7', l:'مدن نشطة'}, {n:'3', l:'منصات'}, {n:'5k–7.5k', l:'ليو / شهر'} ],
+      benefits: {
+        kicker: 'مزاياك', title: 'ما نقدمه',
+        subtitle: 'كل ما تحتاجه لتكسب جيداً وفق وتيرتك.',
+        items: [
+          {t:'دخل شهري 5,000–7,500 ليو', d:'حسب نشاطك.'},
+          {t:'مكافآت أسبوعية', d:'للسائقين النشطين.'},
+          {t:'جدول مرن 100%', d:'اعمل متى شئت.'},
+          {t:'تفعيل سريع', d:'بدون متاعب أو بيروقراطية.'},
+          {t:'دعم كامل', d:'للمبتدئين وذوي الخبرة.'},
+          {t:'دوام جزئي أو كامل', d:'اختر الجدول المناسب لك.'},
+          {t:'إرشاد كامل', d:'لـ Bolt Food و Wolt و Glovo.'}
+        ]
+      },
+      req: {
+        kicker: 'المتطلبات الدنيا', title: 'ما تحتاجه',
+        items: ['دراجة','سكوتر','موتوسيكل','سيارة','هاتف مع إنترنت','رغبة في العمل'],
+        noTransportTitle: 'لا تملك وسيلة؟',
+        noTransportDesc: 'سنعمل على إيجاد الحل المناسب لتبدأ.',
+        noTransportCta: 'هيا نتحدث'
+      },
+      cities: {
+        kicker: 'أين نعمل', title: 'أين نعمل',
+        subtitle: 'نعمل بالفعل بنجاح في أكبر مدن رومانيا — ونحن نتوسع.',
+        romaniaLabel: 'رومانيا',
+        romania: ['كلوج-نابوكا','بوخارست','إياشي','تيميشوارا','أراد','كونستانتسا','براشوف'],
+        active: 'نشطة',
+        expandingLabel: 'قيد التوسع',
+        moldovaName: 'مولدافيا',
+        moldovaDesc: 'نحن نتوسع حالياً — كن من بين أول سائقيْنا.'
+      },
+      cta: {
+        kicker: 'انضم للفريق', headline: 'هل تريد أن تصبح سائقاً؟',
+        sub: 'أرسل لنا الآن على واتساب وسنبدأ عملية التفعيل السريعة.',
+        button: 'راسلنا الآن'
+      },
+      referral: {
+        title: 'برنامج الإحالة',
+        subtitle: 'أحِل صديقاً للانضمام للفريق وكل منكما يحصل على 50 ليو.',
+        button: 'راسلنا على واتساب'
+      },
+      faq: {
+        kicker: 'الأسئلة المتداولة', title: 'الأسئلة المتداولة',
+        items: [
+          {q:'كم يمكن أن أكسب؟', a:'تتراوح الأرباح عادة بين 5,000 و9,000 ليو في الشهر، اعتماداً على ساعات العمل والمنطقة والمنصة. السائقون النشطون في المناطق المزدحمة يكسبون أكثر، خاصة في عطلات نهاية الأسبوع وساعات الذروة.'},
+          {q:'هل يمكنني العمل جزئياً؟', a:'نعم. الجدول مرن 100% — يمكنك العمل جزئياً أو بدوام كامل أو فقط في عطلات نهاية الأسبوع. أنت من يقرر متى وكم تعمل.'},
+          {q:'هل أحتاج سيارة؟', a:'ليس بالضرورة. يمكنك التوصيل بالدراجة أو السكوتر أو الموتوسيكل أو السيارة. إذا لم يكن لديك وسيلة نقل، سنساعدك في إيجاد حل.'},
+          {q:'كم يستغرق التفعيل؟', a:'التفعيل سريع وبدون بيروقراطية. في معظم الحالات يمكنك البدء بالتوصيل في غضون أيام قليلة من التسجيل.'},
+          {q:'هل يمكنني العمل بدون خبرة؟', a:'بالتأكيد. لا تحتاج إلى خبرة. نرشدك خطوة بخطوة لـ Bolt Food وWolt وGlovo ونوفر لك الدعم الكامل في البداية.'}
+        ]
+      },
+      contact: {
+        kicker: 'تواصل معنا', title: 'اتصل',
+        subtitle: 'قدّم الآن وسيقوم أحد الزملاء بالتواصل معك لتفعيل سريع.',
+        companyLabel: 'شركة', phoneLabel: 'الهاتف',
+        waValue: 'متاح', countriesLabel: 'الدول',
+        button: 'قدّم الآن'
+      },
+      footer: {
+        tagline: 'نقدّم فرصاً في رومانيا ومولدافيا.',
+        rights: 'Titanic Delivery © 2026 · جميع الحقوق محفوظة.'
       }
     }
   };
@@ -779,6 +856,8 @@ class Component extends DCLogic {
     const lang = this.state.lang;
     const t = this.tr[lang];
     const isRo = lang === 'ro';
+    const isEn = lang === 'en';
+    const isAr = lang === 'ar';
     const benefits = t.benefits.items.map((b, i) => ({ title: b.t, desc: b.d, icon: this.benefitIcons[i] }));
     const reqs = t.req.items.map((name, i) => ({ name, icon: this.reqIcons[i] }));
     const cities = t.cities.romania.map(c => ({ name: c, active: t.cities.active }));
@@ -799,8 +878,10 @@ class Component extends DCLogic {
       rootRef: this.rootRef,
       setRo: () => this.setState({ lang: 'ro' }),
       setEn: () => this.setState({ lang: 'en' }),
-      roBg: isRo ? '#FFC528' : 'transparent', roFg: isRo ? '#0B0B0C' : '#9A968C',
-      enBg: !isRo ? '#FFC528' : 'transparent', enFg: !isRo ? '#0B0B0C' : '#9A968C'
+      setAr: () => this.setState({ lang: 'ar' }),
+      roClass: isRo ? 'lang-btn lang-btn--active' : 'lang-btn',
+      enClass: isEn ? 'lang-btn lang-btn--active' : 'lang-btn',
+      arClass: isAr ? 'lang-btn lang-btn--active' : 'lang-btn'
     };
   }
 }
